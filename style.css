@@ -6,22 +6,34 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #f5f7fa;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("bonito.jpg");
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background-color: #2e8b57;
+    background-color: #0a3d62;
     color: white;
-    padding: 20px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 2vh 5vw;
 }
 
 nav {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -30,35 +42,51 @@ nav a {
 }
 
 .banner {
-    height: 300px;
-    background: url('https://via.placeholder.com/1200x300') center/cover;
-    
+    width: 100%;
+    height: 70vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: white;
-    font-size: 24px;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0 5vw;
 }
 
-section {
-    padding: 40px;
-    text-align: center;
+.container {
+    padding: 5vh 5vw;
+    width: 90%;
+    max-width: 900px;
+    margin: 5vh auto;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.container h2 {
+    margin-bottom: 2vh;
+    font-size: 2.5vw;
+}
+
+.container p {
+    margin-bottom: 2vh;
+    font-size: 1.2vw;
 }
 
 .cards {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 2vw;
     flex-wrap: wrap;
-    margin-top: 20px;
+    justify-content: center;
 }
 
 .card {
     background: white;
-    padding: 15px;
-    width: 250px;
+    padding: 2vh;
     border-radius: 10px;
+    width: 25vw;
+    min-width: 250px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 }
 
 .card img {
@@ -66,9 +94,19 @@ section {
     border-radius: 10px;
 }
 
+.botao {
+    background-color: #38ada9;
+    padding: 1.5vh 3vw;
+    color: white;
+    display: inline-block;
+    margin-top: 2vh;
+    border-radius: 8px;
+}
+
 footer {
-    background-color: #2e8b57;
+    background-color: #0a3d62;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 3vh;
+    margin-top: auto;
 }
